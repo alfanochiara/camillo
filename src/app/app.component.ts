@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'listafilm';
+
+  ngOnInit() {
+    document.body.className = "selector";
+  }
+
+ngOnDestroy(){
+    document.body.className="";
+  }
 }

@@ -1,0 +1,49 @@
+<!--<div class="tool-bar-container">
+  <div class="nav-container">
+    <app-button *ngFor="let route of routes" [text]="route" (btnClick)="changeRoute(route)"></app-button>
+  </div>
+  <div class="page-title">
+   <h3> {{pageTitle}} </h3>
+  </div>
+</div> -->
+
+<div class="container" >
+
+    <img class="logo" src="assets/popcorn.png" alt="logo" (click)="gotoHome()" />
+
+
+  <div class="links">
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+
+
+
+      <div class="menu-wrap">
+        <ul class="menu">
+            <li class="menu-item">
+                <a>Film</a>
+                <ul class="drop-menu">
+                    <li class="drop-menu-item">
+                        <a>Tutti i film</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a>Aggiungi film</a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+      <li><a routerLink="/addmovie">Aggiungi film</a></li>
+      <li><a>Login</a></li>
+      <li><a>Logout</a></li>
+    </ul>
+  </div>
+
+  <div>
+<a><button class="button-55" role="button">Contacts</button></a>
+</div>
+
+</div>

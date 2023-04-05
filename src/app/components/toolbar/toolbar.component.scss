@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+li,
+a,
+button {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  list-style: none;
+  cursor: pointer;
+}
+
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdownmenu li {
+  display: table;
+}
+
+.links li {
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+  padding: 0 15px;
+}
+.links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.links li a:hover {
+  color: rgba(238, 16, 16, 0.705);
+}
+
+.links li::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 0;
+  height: 2px;
+  background: rgba(238, 16, 16, 0.705);
+  transition: 0.3s;
+}
+
+.links li:hover::after {
+  width: 70%;
+}
+
+/* dropdown menu */
+
+.menu,
+.drop-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+ul li ul.drop-menu {
+  margin-top: 15px;
+  margin-left: auto;
+  border-radius: 5%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  background-color: rgba(238, 16, 16, 0.705);
+  min-width: 100px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+ul li ul.drop-menu .drop-menu-item {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul li ul.drop-menu .drop-menu-item:hover {
+  background-color: #e2c0c0;
+
+  border-radius: 5%;
+}
+
+ul li ul.drop-menu .drop-menu-item a {
+  color: #fff;
+}
+
+ul li ul.drop-menu .drop-menu-item a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+ul li ul.drop-menu .drop-menu-item a::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 0;
+  height: 2px;
+  background: rgba(19, 18, 18, 0.705);
+  transition: 0.3s;
+}
+
+ul li ul.drop-menu .drop-menu-item a:hover::after {
+  width: 70%;
+}
+
+.menu-item:hover .drop-menu {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* CSS per il bottone*/
+.button-55 {
+  margin-right: 10px;
+  align-self: center;
+  background-color: rgba(238, 16, 16, 0.705);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}

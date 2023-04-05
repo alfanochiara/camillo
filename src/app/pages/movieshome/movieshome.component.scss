@@ -1,0 +1,36 @@
+.home-container{
+  display: flex;
+}
+
+.all-movies{
+  width: 75%;
+  min-height:auto;
+  /*border-right: 1px solid red;*/
+  padding: 20px 40px;
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .movies-thumbnail{
+    display: flex;
+    justify-content: space-between;
+    .movie{
+     .detail{
+      color: white;
+
+    }
+  }
+}
+
+.popular-movies{
+  width:25%;
+  min-height: auto;
+  padding: 20px 40px;
+}
+}
