@@ -15,4 +15,5 @@ export class AppComponent {
 ngOnDestroy(){
     document.body.className="";
   }
+  
 }
